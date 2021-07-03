@@ -8,11 +8,11 @@ const PORT = 3000
 app.use(express.json())
 
 let animals = [
-    {class: 'mammal', name: 'ape' },
-    {class: 'amphibian', name: 'frog' },
-    {class: 'arachnid', name: 'spider' },
-    {class: 'reptile', name: 'lizard' },
-    {class: 'arthropod', name: 'tarantula' }
+    {class: 'mammal', name: 'ape', _id: uuidv4() },
+    {class: 'amphibian', name: 'frog', _id: uuidv4() },
+    {class: 'arachnid', name: 'spider', _id: uuidv4() },
+    {class: 'reptile', name: 'lizard', _id: uuidv4() },
+    {class: 'arthropod', name: 'tarantula',_id: uuidv4() }
 ]
 
 
