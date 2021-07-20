@@ -30,9 +30,12 @@ toDoRouter.route('/')
     //empty body when trying to get one
 toDoRouter.route('/:todoId')
     .get((req,res) => {
-        const toDoId = req.params.toDoId
+        const toDoId = req.params.uuidv4()
         const foundItem = toDoItems.find(toDoItems => toDoItems._id === toDoId)
+        console.log(foundItem) 
         res.send(foundItem)
     })
 
 module.exports = toDoRouter
+
+//talking with Giselle, showing an empty object in Postman
